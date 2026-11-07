@@ -1,0 +1,25 @@
+{
+  "name": "Monstruos emocionales",
+  "short_name": "Monstruos",
+  "description": "Actividades breves para identificar emociones y hacer una pausa.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf8fc",
+  "theme_color": "#7960a8",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

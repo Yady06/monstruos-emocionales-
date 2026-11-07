@@ -1,0 +1,39 @@
+# Monstruos emocionales — primera versión
+
+## Qué incluye
+- Aplicación móvil web instalable (PWA).
+- Dos entradas: “Prepararme para clase” y “Necesito hacer una pausa”.
+- 10 categorías con 3 actividades cada una (30 en total).
+- Selección aleatoria dentro de la categoría elegida.
+- Un único cambio; después se puede regresar a la primera actividad.
+- Actividad sorpresa adicional ocasional (frecuencia inicial configurable: 20%).
+- Progreso local: 10 puntos por cada actividad diferente completada por primera vez.
+- Insignias por 1, 5, 10, 20 y 30 actividades diferentes.
+- Tarjeta visual descargable como PNG.
+- No solicita cuentas ni guarda la emoción/categoría elegida.
+- Caché para uso sin conexión después de la primera carga.
+
+## Importante para instalarla
+Una PWA necesita servirse desde una dirección HTTPS (o localhost para pruebas). No basta con abrir `index.html` como archivo local para instalarla ni para activar el modo sin conexión.
+
+1. Publica el contenido de esta carpeta en un alojamiento estático HTTPS (por ejemplo, GitHub Pages, Netlify o el servidor institucional).
+2. Abre esa dirección en el celular con internet una primera vez.
+3. En Android/Chrome: menú del navegador > “Instalar aplicación” o “Agregar a pantalla principal”.
+4. En iPhone/Safari: botón Compartir > “Agregar a pantalla de inicio”.
+5. Abre la aplicación instalada al menos una vez con internet. Después, el contenido principal se almacena para funcionar sin conexión.
+
+## Privacidad y límites
+- Los puntos y actividades completadas se guardan en `localStorage` del navegador/dispositivo.
+- Si se borran los datos del navegador, se desinstala o se cambia de dispositivo, el progreso puede perderse.
+- La tarjeta descargada solo muestra logros, no emociones seleccionadas.
+- No es diagnóstico ni tratamiento psicológico. Si alguien necesita apoyo, debe acudir a una persona adulta de confianza u orientación educativa.
+
+## Ajustes pendientes antes de distribuir
+- Revisar las instrucciones de las 30 actividades con el equipo docente.
+- Probar en los modelos de celular disponibles en el plantel.
+- La frecuencia de la sorpresa está configurada provisionalmente en 20% en `index.html`; puede cambiarse buscando `Math.random()<0.20`.
+- El arte actual usa emojis como marcadores provisionales. Se puede sustituir por ilustraciones originales consistentes de los monstruos.
+
+VERSIÓN REPARADA: 10 monstruos SVG locales visibles sin conexión, temporizador con iniciar/pausar/reiniciar en cada actividad, y caché actualizada.
+
+CORRECCION: Los monstruos ahora estan integrados en index.html y aparecen incluso sin internet o abriendo el archivo directamente.
